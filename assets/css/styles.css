@@ -1,6 +1,5 @@
 body{
-	background-image: url('/assets/images/bg.jpg');
-	background-repeat: repeat;
+	background-color: #000000;
 	color: #9edbf9;
 	width: 100%
 }
