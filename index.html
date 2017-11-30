@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<!-- 
+The player will have to guess the answer, just like in Hangman. This time, though, the player will guess with numbers instead of letters.
+Here's how the app works:
+There will be four crystals displayed as buttons on the page.
+The player will be shown a random number at the start of the game.
+When the player clicks on a crystal, it will add a specific amount of points to the player's total score.
+Your game will hide this amount until the player clicks a crystal.
+When they do click one, update the player's score counter.
+The player wins if their total score matches the random number from the beginning of the game.
+The player loses if their score goes above the random number.
+The game restarts whenever the player wins or loses.
+When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero.
+The app should show the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game.
+Option 1 Game design notes
+
+The random number shown at the start of the game should be between 19 - 120.
+Each crystal should have a random hidden value between 1 - 12. 
+-->
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Crystal Collector</title>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+  </head>
+
+  <body>
+<div class="jumbotron" id="game-title">
+  <h1 class="display-3">Crystal Collector</h1>
+  <p class="lead">A simple game about crystals.</p>
+
+</div>
+ 
+    <div class="card" id="game-rules">
+      <div class="card-body">
+      <h2>Rules</h2>
+      <p>You will be given a random number at the start of the game.</p>
+      <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p> 
+      <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number</p>
+      <p>The value of each crystal is hidden from you until you click on it.</p>
+      <p>Each time when the game starts, the game will change the values of each crystal.</p>
+    </div>
+  </div>
+  <div class="card" id="random">
+  <div class="card-body">
+    <span id="random-number"></span>
+    </div>
+  </div>
+    <div class="card" id="game-score">
+      <div class="card-body">
+        <p>Wins: <span id="win-count"></span></p>  
+        <p>Losses: <span id="loss-count"></span></p>  
+    </div>
+  </div>
+
+    <div id="crystal-buttons">
+    <button class= "rocks" id="first-crystal"><img src="assets/images/firstrock.png"></button>
+    <button class= "rocks" id="second-crystal"><img src="assets/images/secondrock.png"></button>
+    <button class= "rocks" id="third-crystal"><img src="assets/images/thirdrock.png"></button>
+    <button class= "rocks" id="fourth-crystal"><img src="assets/images/fourthrock.png"></button>
+    </div>
+    <div class="card" id="score-message">
+    <div class="card-body">
+    <h2>Your total score is:</h2>
+    </div>
+    </div>
+    <div class="card" id="score-count">
+    <div class="card-body">
+    <span id="score"></span>
+    </div>
+  </div>
+  
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+  </body>
+
+</html>

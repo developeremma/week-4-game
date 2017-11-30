@@ -1,0 +1,71 @@
+body{
+	background-image: url('/assets/images/bg.jpg');
+	background-repeat: repeat;
+	color: #9edbf9;
+	width: 100%
+}
+img{
+	width: 200px;
+	height: 200px;
+}
+button{
+	opacity: 0.5;
+}
+button:hover{
+	 	opacity: 1.0;
+
+}
+#game-title{
+	background: orange;
+	color:#000000;
+	margin-bottom: -40px;
+}
+#game-rules{
+	color:#ffffff;
+}
+#game-score{
+	background: #ffffff;
+	margin: 50px;
+	color:#000000;
+	font-size: 30px;
+	margin-bottom: -40px;
+}
+#score-message{
+	background: yellow;
+	color:#000000;
+	margin:50px;
+	font-size: 30px;
+	margin-top: -40px;
+}
+#score-count{
+	background: red;
+	color:#ffffff;
+	font-size: 50px;
+	margin:50px;
+	margin-top: -40px;
+}
+
+#random{
+	background: yellow;
+	color: #000000;
+	font-weight: 700;
+	margin:50px;
+	font-size: 40px;
+}
+#crystal-buttons{
+	text-align: center;
+	margin:50px;
+
+}
+
+.display-3{
+	margin-left: 8px;
+}
+.lead{
+	margin-left: 15px;
+}
+
+.card{
+	background: red;
+	margin-top: 50px;
+}
